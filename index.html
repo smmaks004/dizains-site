@@ -459,16 +459,16 @@
             <p>Kad nedēļas darbi tuvojas noslēgumam, bieži izmantoju Steam platformu, lai uzspēlētu datorspēles. Papildus tam, regulāri skatos YouTube video, kas palīdz novērst uzmanību no studijām. Šī digitālā atpūta palīdz man saglabāt motivāciju, uzturēt darba un privātās dzīves līdzsvaru un efektīvāk atgriezties pie mācībām.</p>
         </div>
         <div class="bento-gallery reveal delay">
-            <div id="ph-atputa" class="image-placeholder bento-main">
-                <div class="img-label">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
-                    Spotify
-                </div>
-            </div>
-            <div id="ph-steam" class="image-placeholder bento-sub">
+            <div id="ph-steam" class="image-placeholder bento-main">
                 <div class="img-label" style="font-size:0.75rem">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
                     Steam
+                </div>
+            </div>
+            <div id="ph-atputa" class="image-placeholder bento-sub">
+                <div class="img-label">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                    Spotify
                 </div>
             </div>
             <div id="ph-youtube" class="image-placeholder bento-sub">
@@ -487,13 +487,13 @@
 
 <script>
     // ═══════════════════════════════════════════════════════════════
-    // PHOTOS - file names in the img/ folder
+    // PHOTOS - file names in the img/folder
     // ═══════════════════════════════════════════════════════════════
     const PHOTOS = {
         hero_dark:     'img/hero-dark.png',
         hero_light:    'img/hero-light.png',
         e_studijas:    'img/e-studija.jpg',
-        programmesana: 'img/vscode.png',
+        programmesana: 'img/github.png',
         teams:         'img/MSTeams.jpg',
         outlook:       'img/outlook.jpg',
         odo:           'img/Odo.png',
@@ -516,6 +516,8 @@
             'ph-steam':         PHOTOS.steam,
             'ph-youtube':       PHOTOS.youtube,
         };
+        
+        // ── ALT TEXTS ──
         const altTexts = {
             'ph-e-studijas':    'E-studiju platformas ekrānuzņēmums — kursa materiāli un uzdevumi',
             'ph-programmesana': 'Visual Studio Code redaktora ekrānuzņēmums ar Java kodu',
